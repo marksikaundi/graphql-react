@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import { apolloClient, 
+  InMemoryCache, 
+  ApolloProvider, 
+  HttpLink, 
+  ApolloClient
+} from '@apollo/client';
 
 function App() {
+  
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    uri: "https://graphql-weather-api.herokuapp.com"
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ApolloProvider client={client}>
+      <Home />
+    </ApolloProvider>
+    
+  )
 }
 
-export default App;
+export default App

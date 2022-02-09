@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .weather {
+    align-items: center;
+    /* display: flex; */
+    flex-direction: column;
+  }
+  .button {
+      border-radius: 5px;
+      color: white;
+      background-color: orange;
+      margin-top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  .input {
+      border-radius: 2px;
+      border-color: blueviolet;
+      size: 50px;
+      width: 500px;
+      height: 30px;
+      align-items: center;
+      color: black;
+  }
+  .p {
+      align-items: center;
+  }
