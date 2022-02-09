@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Weather Update App
+This is a simple weather app, which you can use to get all the updates worldwide
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
